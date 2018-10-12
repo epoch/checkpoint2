@@ -83,3 +83,6 @@ def toonify(accent, sentence)
   end
 end
 toonify('daffy', 'sup sausage')
+toonify('elmer', 'rup raurage')
+toonify('Ajay', 'rup raurage')
+toonify('elmer', 'sup sausage')
