@@ -36,3 +36,7 @@ lost_boys = [
 lost_boys.each do |i|
   i[:age] += 1
 end
+
+# Question 5
+children = ['Wendy', 'John', 'Michael']
+darling_children = children.map { |name| name + " Darling" }
