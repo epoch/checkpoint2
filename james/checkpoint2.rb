@@ -35,3 +35,10 @@ lost_boys = [
 lost_boys.each do |boy|
   boy[:age] += 30
 end
+
+#Question 5
+children = ['Wendy', 'John', 'Michael']
+
+darling_children = children.map do |child|
+  child = "#{child} Darling"
+end
