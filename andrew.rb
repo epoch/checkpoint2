@@ -20,4 +20,17 @@ town = {
 town[:residents].delete("Belle")
 town[:castle][:residents].push("Belle")
 
+# Question 3
+
+friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
+
+# one option:
+
+friends.each { |friend| puts "Belle is friends with #{friend}" }
+
+# or a loop:
+
+
+
+
 binding.pry
