@@ -61,3 +61,6 @@ class Animal
     @name = name
   end
 end
+
+#Question 7
+pumba = Animal.new("Pumba")
