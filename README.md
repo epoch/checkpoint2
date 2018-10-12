@@ -9,9 +9,12 @@
 # Question 1
 Define a method called `offer_rose`, which should take one argument named `person` (String).
 When called the method should print to the terminal:
-"Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
+"Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?" -->
+def offer_rose string
+    puts  "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
+end
 
-
+offer_rose('person')
 # Question 2
 Assume the following hash...
 ```ruby
@@ -30,6 +33,10 @@ Using Ruby...
 Type your solution directly below this line:
 
 
+town[:residents].delete('Belle')
+town[:guests] = ['Belle']
+
+
 
 # Question 3
 Assume you have an array of strings representing friends' names...
@@ -43,6 +50,9 @@ Using a loop and string interpolation, print each string in `friends` to the Ter
 "Belle is friends with Lumière"
 "Belle is friends with Mrs. Potts"
 ```
+friends.each do |friend|
+   p  "Belle is friends with #{friend}"
+end
 
 
 
@@ -59,6 +69,9 @@ lost_boys = [
 ```
 Use `.each` to iterate over the `lost_boys` array and increase each boy's age by 30 years.
 
+lost_boys.each { |name|
+     name[:age] += 10
+}
 
 
 # Question 5
@@ -70,12 +83,33 @@ Use `.map` to iterate through the `children` array and add ` Darling` to the end
 of their names. Assign the returned array to a variable called `darling_children`.
 Example: `Wendy` should become `Wendy Darling` in the new array.
 
-
+darling_children = children.map {|name|
+    darling_children = []
+    name = "#{name} Darling"
+}
 # Question 6
 Define a Ruby class called `Animal`. Each `Animal` should have...
 - A `name` (String) attribute
 - A `greet` instance method
 - The ability to "get" and "set" `name`
+class Animal 
+
+
+    def set_name
+        @name = get_name().chomp
+    end
+    
+    def get_name 
+        @name = gets 
+    end
+
+    def greets
+        "#{@name} says hello"
+    end
+
+end
+
+animal = Animal.new
 
 
 # Question 7
