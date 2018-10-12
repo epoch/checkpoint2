@@ -71,5 +71,18 @@ end
 
 pumba = Animal.new("pumba")
 
+# Question 8
+
+def toonify(accent, sentence)
+    if accent == "daffy"
+       return sentence.gsub("s", "th")
+    end
+    if accent == "elmer"
+        return sentence.gsub("r", "w")
+    else
+        return sentence
+    end
+end
+
 binding.pry
 
