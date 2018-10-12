@@ -1,15 +1,15 @@
 require 'pry'
 
-lost_boys = [
-    {name: 'Tootles', age: 11},
-    {name: 'Nibs', age: 9},
-    {name: 'Slightly', age: 10},
-    {name: 'Curly', age: 8},
-    {name: 'The Twins', age: 9}
-]
+# Assume the following array:
+
+children = ['Wendy', 'John', 'Michael']
+# Use `.map` to iterate through the `children` array and add ` Darling` to the end
+# of their names. Assign the returned array to a variable called `darling_children`.
+# Example: `Wendy` should become `Wendy Darling` in the new array.
 
 
-lost_boys.each { |name|
-   p name[:age] += 10
+darling_children = children.map {|name|
+    darling_children = []
+    name = "#{name} Darling"
 }
 binding.pry
