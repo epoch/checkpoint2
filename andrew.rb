@@ -46,4 +46,30 @@ children = ['Wendy', 'John', 'Michael']
 
 darling_children = children.map { |a| "#{a} Darling" }
 
+# Question 6
+
+class Animal
+    def initialize(name) # is there a way to require this as a string?
+    @name = name
+    end
+    
+    def greet
+        return "Hi my name is #{@name}" # unsure what this method should do?
+    end
+
+    def get_name
+        @name
+    end
+
+    def set_name(name)
+        @name = name
+    end
+
+end
+
+# Question 7
+
+pumba = Animal.new("pumba")
+
 binding.pry
+
