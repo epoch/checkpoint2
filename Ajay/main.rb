@@ -44,8 +44,27 @@ require 'pry'
 
 #Question 5
 
-children = ['Wendy', 'John', 'Michael']
+# children = ['Wendy', 'John', 'Michael']
+# darling_children = children.map{|name| name + ' Darling'}
 
-darling_children = children.map{|name| name + ' Darling'}
-binding.pry
+# Question 6
+
+class Animal
+  def initialize(new_name)
+    @name = new_name
+  end
+
+  def greet
+    "Hi I'm a #{@name}"
+  end
+
+  def get_name
+    @name
+  end
+
+  def set_name(new_given_name)
+    @name = new_given_name
+  end
+end
+
 
