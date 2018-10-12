@@ -92,6 +92,23 @@ children.map { |name| name + " Darling" }
 # - A `greet` instance method
 # - The ability to "get" and "set" `name`
 
+class Animal
+
+  def name
+    @name = ""
+  end
+
+  def greet
+  end
+
+  def get_name
+  end
+
+  def set_name
+  end
+
+end
+
 
 # # Question 7
 # Create a new `Animal` instance with the name "Pumba" an assign it to a variable named `pumba`.
