@@ -23,3 +23,16 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 friends.each do |name|
   puts "Belle is friends with #{name}"
 end
+
+# Question 4
+lost_boys = [
+  {name: 'Tootles', age: 11},
+  {name: 'Nibs', age: 9},
+  {name: 'Slightly', age: 10},
+  {name: 'Curly', age: 8},
+  {name: 'The Twins', age: 9}
+]
+
+lost_boys.each do |i|
+  i[:age] += 1
+end
