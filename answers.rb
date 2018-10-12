@@ -56,20 +56,22 @@ friends.each do |friend|
 end
 
 
-
 # # Question 4
 # Assume the following array of hashes:
 # ```ruby
-# lost_boys = [
-#   {name: 'Tootles', age: 11},
-#   {name: 'Nibs', age: 9},
-#   {name: 'Slightly', age: 10},
-#   {name: 'Curly', age: 8},
-#   {name: 'The Twins', age: 9}
-# ]
+lost_boys = [
+  {name: 'Tootles', age: 11},
+  {name: 'Nibs', age: 9},
+  {name: 'Slightly', age: 10},
+  {name: 'Curly', age: 8},
+  {name: 'The Twins', age: 9}
+]
 # ```
 # Use `.each` to iterate over the `lost_boys` array and increase each boy's age by 30 years.
 
+lost_boys.each do (name, age)
+  p "#{ name }" 
+end
 
 
 # # Question 5
