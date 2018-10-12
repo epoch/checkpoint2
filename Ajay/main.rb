@@ -55,7 +55,7 @@ class Animal
   end
 
   def greet
-    "Hi I'm a #{@name}"
+    "Hi I'm #{@name}"
   end
 
   def get_name
@@ -67,4 +67,4 @@ class Animal
   end
 end
 
-
+pumba = Animal.new('Pumba')
