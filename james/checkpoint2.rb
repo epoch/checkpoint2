@@ -42,3 +42,22 @@ children = ['Wendy', 'John', 'Michael']
 darling_children = children.map do |child|
   child = "#{child} Darling"
 end
+
+#Question 6 
+class Animal
+  def initialize(name)
+    @name = name
+  end
+
+  def greet
+
+  end
+
+  def get_name 
+    @name
+  end
+
+  def set_name(name)
+    @name = name
+  end
+end
