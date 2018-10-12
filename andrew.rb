@@ -36,13 +36,14 @@ lost_boys = [
   {name: 'The Twins', age: 9}
 ]
 
-lost_boys2 =  {name: 'Tootles', age: 11}
-
-lost_boys2[:age] = lost_boys2[:age] + 30
-
 lost_boys.each do |boy|
 boy[:age] = boy[:age] + 30
 end
 
+# Question 5
+
+children = ['Wendy', 'John', 'Michael']
+
+darling_children = children.map { |a| "#{a} Darling" }
 
 binding.pry
