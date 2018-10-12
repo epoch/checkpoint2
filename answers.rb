@@ -132,5 +132,14 @@ pumba = Animal.new("Pumba")
 # ```
 # Call the method twice with different arguments
 
-
-binding.pry
+def toonify (accent, sentence)
+  if (accent == 'daffy')
+    daffy_new = sentence.gsub!('s', 'th')
+    return daffy_new
+  elsif (accent == 'elmer')
+    elmer_new = sentence.gsub!('r', 'w')
+    return elmer_new
+  else 
+    return sentence
+  end
+end
