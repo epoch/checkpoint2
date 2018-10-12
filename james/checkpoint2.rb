@@ -14,3 +14,6 @@ town = {
 }
 
 town[:residents].delete("Belle")
+town[:castle][:guests] << "Belle"
+
+p town[:castle][:guests]
