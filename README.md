@@ -1,4 +1,4 @@
-<!-- 1. fork this repo
+1. fork this repo
 2. clone your repo to your computer
 3. make a new directory with your name
 4. put your answers in this directory
@@ -10,9 +10,12 @@
 Define a method called `offer_rose`, which should take one argument named `person` (String).
 When called the method should print to the terminal:
 "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?" -->
-def offer_rose person
+def offer_rose string
+    puts  "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 end
-<!-- # Question 2
+
+offer_rose('person')
+# Question 2
 Assume the following hash...
 ```ruby
 town = {
@@ -28,6 +31,10 @@ Using Ruby...
 - Remove "Belle" from `residents`
 - Add "Belle" to the `guests` array
 Type your solution directly below this line:
+
+
+town[:residents].delete('Belle')
+town[:guests] = ['Belle']
 
 
 
@@ -94,4 +101,4 @@ Write a method called `toonify` that takes two parameters, `accent` and `sentenc
 toonify "daffy", "so you smell like sausage"
 #=> "tho you thmell like thauthage"
 ```
-Call the method twice with different arguments -->
+Call the method twice with different arguments

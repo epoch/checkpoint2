@@ -1,8 +1,12 @@
 require 'pry'
 
-def offer_rose string
-    puts  "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
-end
+town = {residents: ["Maurice", "Belle", "Gaston"],
+    castle: {
+      num_rooms: 47,
+      residents: ["Robby Benson"],
+      guests: []
+    }
+  }
 
-offer_rose('person')
 binding.pry
+
