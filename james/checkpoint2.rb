@@ -64,3 +64,19 @@ end
 
 #Question 7
 pumba = Animal.new("Pumba")
+
+#Quesiton 8
+def toonify(accent, sentence)
+  if accent == "daffy"
+    sentence = sentence.gsub('s', 'th')
+  elsif accent == "elmer"
+    sentence = sentence.gsub('r', 'w')
+  elsif accent == "geordie"
+    sentence = "Waaahey man. #{sentence} like"
+  end
+  sentence
+end
+
+p toonify("daffy", "so you smell like sausage")
+p toonify("elmer", "Writing sentences with r's is hard")
+p toonify("geordie", "I'm from Newcastle")
