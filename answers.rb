@@ -12,27 +12,30 @@ require 'pry'
 # When called the method should print to the terminal:
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 
-puts "What is your name? "
-offer_rose = gets.chomp
-print "Would you take this rose, " + offer_rose + " in exchange for giving an old beggar woman shelter from the bitter cold?"
+# puts "What is your name? "
+# offer_rose = gets.chomp
+# print "Would you take this rose, " + offer_rose + " in exchange for giving an old beggar woman shelter from the bitter cold?"
 
 # # Question 2
 # Assume the following hash...
-# ```ruby
-# town = {
-#   residents: ["Maurice", "Belle", "Gaston"],
-#   castle: {
-#     num_rooms: 47,
-#     residents: ["Robby Benson"],
-#     guests: []
-#   }
-# }
+# 
+town = {
+  residents: ["Maurice", "Belle", "Gaston"],
+  castle: {
+    num_rooms: 47,
+    residents: ["Robby Benson"],
+    guests: []
+  }
+}
 # ```
 # Using Ruby...
 # - Remove "Belle" from `residents`
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
 
+town[:residents].delete_at(1)
+
+town[:castle][:guests].push("Belle")
 
 
 # # Question 3
