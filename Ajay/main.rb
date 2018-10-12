@@ -47,24 +47,39 @@ require 'pry'
 # children = ['Wendy', 'John', 'Michael']
 # darling_children = children.map{|name| name + ' Darling'}
 
-# Question 6
+# Question 6 & 7
 
-class Animal
-  def initialize(new_name)
-    @name = new_name
-  end
+# class Animal
+#   def initialize(new_name)
+#     @name = new_name
+#   end
 
-  def greet
-    "Hi I'm #{@name}"
-  end
+#   def greet
+#     "Hi I'm #{@name}"
+#   end
 
-  def get_name
-    @name
-  end
+#   def get_name
+#     @name
+#   end
 
-  def set_name(new_given_name)
-    @name = new_given_name
+#   def set_name(new_given_name)
+#     @name = new_given_name
+#   end
+# end
+
+# pumba = Animal.new('Pumba')
+
+# Question 8
+
+def toonify(accent, sentence)
+  if accent == 'daffy'
+    new_sentence = sentence.gsub(/[s]/, 'th')
+    puts new_sentence
+  elsif accent == 'elmer'
+    new_sentence = sentence.gsub(/[r]/, 'w')
+    puts new_sentence
+  else
+    puts sentence 
   end
 end
-
-pumba = Animal.new('Pumba')
+toonify('daffy', 'sup sausage')
