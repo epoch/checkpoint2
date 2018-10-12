@@ -22,12 +22,23 @@ require 'pry'
 # town[:castle][:guests].push('Belle')
 
 #Question 3
-friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
+# friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 
-friends.each do |friend|
-  puts "Belle is friends with #{friend}"
+# friends.each do |friend|
+#   puts "Belle is friends with #{friend}"
+# end
+
+# Question 4
+
+lost_boys = [
+  {name: 'Tootles', age: 11},
+  {name: 'Nibs', age: 9},
+  {name: 'Slightly', age: 10},
+  {name: 'Curly', age: 8},
+  {name: 'The Twins', age: 9}
+]
+
+lost_boys.each do |lost_boy|
+  lost_boy[:age] = lost_boy[:age] + 30
 end
-
-
-
 
