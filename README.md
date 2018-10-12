@@ -69,6 +69,9 @@ lost_boys = [
 ```
 Use `.each` to iterate over the `lost_boys` array and increase each boy's age by 30 years.
 
+lost_boys.each { |name|
+     name[:age] += 10
+}
 
 
 # Question 5
