@@ -50,6 +50,9 @@ Using a loop and string interpolation, print each string in `friends` to the Ter
 "Belle is friends with Lumière"
 "Belle is friends with Mrs. Potts"
 ```
+friends.each do |friend|
+   p  "Belle is friends with #{friend}"
+end
 
 
 
