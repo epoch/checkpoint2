@@ -41,7 +41,7 @@ town[:castle][:guests].push("Belle")
 # # Question 3
 # Assume you have an array of strings representing friends' names...
 # ```ruby
-# friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
+friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 # ```
 # Using a loop and string interpolation, print each string in `friends` to the Terminal...
 # ```ruby
@@ -50,6 +50,10 @@ town[:castle][:guests].push("Belle")
 # "Belle is friends with Lumière"
 # "Belle is friends with Mrs. Potts"
 # ```
+
+friends.each do |friend|
+  p "Belle is friends with #{ friend }"
+end
 
 
 
