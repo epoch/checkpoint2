@@ -24,13 +24,25 @@ town[:castle][:residents].push("Belle")
 
 friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 
-# one option:
-
 friends.each { |friend| puts "Belle is friends with #{friend}" }
 
-# or a loop:
+# Question 4
 
+lost_boys = [
+  {name: 'Tootles', age: 11},
+  {name: 'Nibs', age: 9},
+  {name: 'Slightly', age: 10},
+  {name: 'Curly', age: 8},
+  {name: 'The Twins', age: 9}
+]
 
+lost_boys2 =  {name: 'Tootles', age: 11}
+
+lost_boys2[:age] = lost_boys2[:age] + 30
+
+lost_boys.each do |boy|
+boy[:age] = boy[:age] + 30
+end
 
 
 binding.pry
