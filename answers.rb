@@ -69,8 +69,8 @@ lost_boys = [
 # ```
 # Use `.each` to iterate over the `lost_boys` array and increase each boy's age by 30 years.
 
-lost_boys.each do (name, age)
-  p "#{ name }" 
+lost_boys.each do |boys|
+  boys[:age] +=30 
 end
 
 
@@ -94,17 +94,20 @@ children.map { |name| name + " Darling" }
 
 class Animal
 
-  def name
-    @name = ""
+  def initialize (name)
+    @name = name
   end
 
   def greet
+    p "Hello"
   end
 
-  def get_name
+  def get
+    p @name
   end
 
-  def set_name
+  def set (new_name)
+    @name = new_name
   end
 
 end
