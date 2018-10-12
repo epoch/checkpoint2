@@ -113,6 +113,7 @@ end
 # # Question 7
 # Create a new `Animal` instance with the name "Pumba" an assign it to a variable named `pumba`.
 
+pumba = Animal.new("Pumba")
 
 # # Question 8
 
